@@ -3,11 +3,8 @@ import { Search } from "lucide-react";
 import { useState } from "react";
 
 const RANSOMWARE_DATA = [
-	{ id: 1, name: "WannaCry", signature: "SHA256: b4f6...7d1a", lastSeen: "2025-03-20" },
-	{ id: 2, name: "LockBit", signature: ".lockbit (File Extension)", lastSeen: "2025-03-18" },
-	{ id: 3, name: "Ryuk", signature: "C2 IP: 185.234.219.18", lastSeen: "2025-03-15" },
-	{ id: 4, name: "Maze", signature: ".maze (File Extension)", lastSeen: "2025-03-12" },
-	{ id: 5, name: "Conti", signature: "SHA256: a1b2...c3d4", lastSeen: "2025-03-10" },
+	{ id: 1, name: "GonnaCry", signature: "SHA256: b4f6...7d1a", lastSeen: "2025-03-20" },,
+	{ id: 5, name: "Lockbit", signature: "SHA256: a1b2...c3d4", lastSeen: "2025-03-10" },
 ];
 
 const DetectedRansomwareTable = () => {
