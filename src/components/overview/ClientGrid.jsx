@@ -13,9 +13,9 @@ const CLIENT_STATUS = [
 
 const statusColors = {
   "Threat Detected": "bg-red-800",
-  Online: "bg-green-700",
-  Offline: "bg-gray-600",
-  Disconnected: "bg-gray-900",
+  Online: "bg-yellow-700",
+  Offline: "bg-gray-700",
+  Disconnected: "bg-gray-800",
 };
 
 const ClientGrid = () => {
@@ -28,7 +28,7 @@ const ClientGrid = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4 }}
     >
-      <h2 className="text-xl font-semibold mb-4 text-gray-100">Devices</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-100">Device Status</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 overflow-y-auto max-h-72">
         {CLIENT_STATUS.map((client, index) => (
@@ -36,7 +36,7 @@ const ClientGrid = () => {
             key={index}
             className={`rounded-xl p-4 flex flex-col justify-center shadow-md ${
               statusColors[client.status]
-            } text-gray-100 ${
+            } bg-gradient-to-br from-white/5 to-transparent ${
               client.status === "Threat Detected"
                 ? "cursor-pointer hover:ring-2 hover:ring-white transition"
                 : ""
