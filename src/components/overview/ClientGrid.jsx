@@ -28,7 +28,7 @@ const ClientGrid = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.4 }}
     >
-      <h2 className="text-xl font-semibold mb-4 text-gray-100">Device Overview</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-100">Devices</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 overflow-y-auto max-h-72">
         {CLIENT_STATUS.map((client, index) => (
